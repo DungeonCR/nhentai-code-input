@@ -1,0 +1,20 @@
+body {
+  background-image: url("https://pbs.twimg.com/media/E2Oho91VUAEVxQf?format=jpg&name=900x900");
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
+
+input,
+button {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 250px;
+  opacity: 0.4;
+}
