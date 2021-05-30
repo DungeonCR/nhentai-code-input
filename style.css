@@ -16,5 +16,39 @@ button {
   display: inline-block;
   padding: 10px;
   margin-top: 250px;
-  opacity: 0.4;
+}
+/* Input Box */
+.border-neon {
+  background-color: transparent;
+  border: 2px solid pink;
+  color: pink;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+::placeholder {
+  color: #ff94b8;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/*  READ Button */
+.border-neon {
+  background-color: transparent;
+  border: 2px solid pink;
+  color: pink;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.border-neon:hover,
+.border-neon:focus {
+  -webkit-box-shadow: inset 0px 0px 8px 3px #ff94b8;
+  box-shadow: 0px 0px 10px 3px #ff94b8, inset 0px 0px 10px 3px #ff94b8;
+  border-color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8,
+    0 0 50px #ff94b8, 0 0 60px #ff94b8, 0 0 70px #ff94b8;
 }
