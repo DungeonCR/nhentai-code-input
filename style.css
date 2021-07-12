@@ -1,54 +1,58 @@
-body {
-  background-image: url("https://pbs.twimg.com/media/E2Oho91VUAEVxQf?format=jpg&name=900x900");
+.hero {
+  width: 100%;
   height: 100vh;
-  width: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-div {
+  background: #272442;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-
-input,
-button {
-  display: inline-block;
-  padding: 10px;
-  margin-top: 250px;
+#searchBox {
+  border-radius: 50px;
+  padding: 15px;
+  background: #11101d;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15) -6px -6px 10px -1px
+    rgba(255, 255, 255, 0.7);
 }
-/* Input Box */
-.border-neon {
-  background-color: transparent;
-  border: 2px solid pink;
-  color: pink;
-  text-align: center;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-::placeholder {
-  color: #ff94b8;
+#nhentaiIcon {
+  width: 50px;
+  cursor: pointer;
 }
 
-textarea:focus,
-input:focus {
+input {
+  font-size: 20px;
+  color: #fff;
+  width: 0px;
+  border: 0;
+  background: transparent;
   outline: none;
+  transition: 1s;
 }
-
-/*  READ Button */
-.border-neon {
-  background-color: transparent;
-  border: 2px solid pink;
-  color: pink;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-.border-neon:hover,
-.border-neon:focus {
-  -webkit-box-shadow: inset 0px 0px 8px 3px #ff94b8;
-  box-shadow: 0px 0px 10px 3px #ff94b8, inset 0px 0px 10px 3px #ff94b8;
-  border-color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8,
-    0 0 50px #ff94b8, 0 0 60px #ff94b8, 0 0 70px #ff94b8;
+.active input {
+  width: 165px;
+  padding: 12px 20px;
+}
+#nhentaiButton {
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #11101d;
+  color: white;
+  font-size: 22px;
+  height: 0px;
+  width: 0px;
+  text-align: center;
+}
+.active #nhentaiButton {
+  height: 50px;
+  width: 50px;
+}
+.active #searchBox {
+  padding: 0px;
 }
