@@ -24,8 +24,8 @@ input {
   font-size: 20px;
   color: #fff;
   width: 0px;
-  border: 0;
-  background: transparent;
+  border: none;
+  background: none;
   outline: none;
   transition: 1s;
 }
@@ -39,6 +39,7 @@ input::-webkit-inner-spin-button {
   padding: 12px 20px;
 }
 #nhentaiButton {
+  display: none;
   border: none;
   border-radius: 50%;
   overflow: hidden;
@@ -50,6 +51,7 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 .active #nhentaiButton {
+  display: block;
   height: 50px;
   width: 50px;
 }
